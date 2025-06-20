@@ -1,6 +1,8 @@
 🧵 Cross Stitch Pattern Generator
 A simple cross-stitch pattern generator based on uploaded images. The program automatically selects the closest colors from a DMC palette (or custom palette) and creates a pattern with color codes, symbols, and stitch count.
 
+
+
 🔍 Main Features
 Image Upload (JPG, PNG, BMP)
 Automatic selection of optimal number of colors
@@ -8,6 +10,10 @@ Color matching using DMC or custom palettes
 Pattern preview with grid and symbol overlay
 Export to PNG and PDF formats
 Custom palette management (import/export CSV)
+
+
+
+
 🖼 Application Interface
 The app is built with PyQt6 and consists of two main panels:
 
@@ -24,6 +30,10 @@ Actions : Preview, Generate Pattern
 Right Panel:
 Pattern Preview Area
 Status Info : size, loading status
+
+
+
+
 ⚙️ Technical Details
 Used Libraries:
 PyQt6 — GUI interface
@@ -36,21 +46,25 @@ Reduce to target number of colors via k-means clustering
 Match clustered colors to nearest DMC color (CIEDE2000)
 Generate enlarged pattern image with symbols and grid
 Export pattern and legend to PDF
+
+
+
+
+
+
 📦 How to Run
 Requirements:
 Python 3.8+
 Install dependencies:
 bash
 
-
-1
 pip install opencv-python scikit-learn matplotlib numpy pandas PyQt6 pillow
+
 Launch:
-bash
 
-
-1
 python cross_stitch_generator.py
+
+
 📄 Example Output
 PDF output includes:
 
